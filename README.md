@@ -1,2 +1,2 @@
-# Portforlio
-Rachel's Personal Portforlio
+# Portfolio
+Rachel's Personal Portfolio
