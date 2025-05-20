@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Aboreto, Jost } from "next/font/google";
-
+import "antd/dist/reset.css";
+import Navbar from "./pages/Navbar/Navbar";
+import Footer from "./pages/Footer/Footer";
+// Remove react-router imports and page imports; Next.js handles routing via the /app or /pages directory.
 const aboreto = Aboreto({ subsets: ["latin"], weight: "400" });
 const jost = Jost({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
@@ -16,12 +19,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <html lang="en">
-        <body className={jost.className}>
-          <main className={aboreto.className}>{children}</main>
-        </body>
-      </html>
-    </>
+    <html lang="en">
+      <body
+        className={`${aboreto.className} ${jost.className}`}
+        style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+      >
+        <Navbar />
+        <main style={{ flex: 1 }}>{children}</main>
+        <Footer />
+      </body>
+    </html>
   );
 }

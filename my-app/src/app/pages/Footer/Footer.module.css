@@ -1,0 +1,44 @@
+
+.items {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.email {
+    width: 60px;
+}
+.items img { 
+    height: 45px;
+}
+
+
+.title {
+    font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .customDivider {
+    border-color: #333;
+    border-width: 0.7px;
+    margin: 30px auto;
+  }
+
+  @media (max-width: 768px) {
+    .email {
+    width: 40px;
+}
+.items img { 
+    height: 35px;
+}
+.title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,86 @@
+.navbar {
+    display: flex;
+    height: 40px;
+    justify-content: space-between ;
+    font-family: 'Jost', sans-serif;
+    padding-top: 60px;
+}
+
+.title {
+    font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-left: 80px
+}
+.menuItems {
+    font-weight: 400;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 30px;
+    padding-right: 80px;
+}
+  .customDivider {
+    border-color: #333;
+    border-width: 0.7px;
+    margin: 60px auto;
+  }
+
+  .menu {
+    display: none;
+    width: 35px;
+    height:35px;
+  }
+  @media (max-width: 768px) {
+ .menu {
+    display: block;
+    right: 30px;
+    position: fixed;
+    top: 40px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+
+.menuItems {
+    margin-top: 30px;
+  position: absolute;       
+  top: 100%;            
+  right: 0;             
+  width: 20vw;          
+  background-color: white; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: none;         
+  flex-direction: column;
+  gap: 20px;
+  padding: 1em 0;
+  font-size: 24px;
+  z-index: 999;            
+}
+
+  .navbar {
+  position: relative; 
+  display: flex;
+  padding: 0 20px;
+  height: 60px;
+}
+
+
+.showMenu {
+    display: flex;
+  }
+  
+.menuItems Link {
+ font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+  .title {
+    font-size: 24px;
+    padding-top: 60px;
+    
+  }
+  }
